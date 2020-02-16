@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CodePen - Form validation by Type</title>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+      </head>
+
+      <body translate="no">
+        <p>
+          At least one piece of data has to come in from input type<br />
+          This is a dynamic form that evaluates data by type, allowing additions
+          and substractions of input types.
+        </p>
+        <form action="" method="get">
+          <br />
+          Name: <input type="text" name="fullname" placeholder="" /><br />
+          Gender:<br />
+          Male <input type="radio" name="gender" value="male" /> Female
+          <input type="radio" name="gender" value="female" /> <br />
+          Hobbies<br />
+          Baseball
+          <input type="checkbox" name="hobbies[]" value="baseball" /> Football
+          <input type="checkbox" name="hobbies[]" value="football" /> Hockey
+          <input type="checkbox" name="hobbies[]" value="hockey" /> <br />
+          Favorite show
+          <select name="show">
+            <option value="">Choose Below</option>
+            <option value="ATHF">Aqua Teen Hunger Force</option>
+            <option value="Family Guy">Family Guy</option>
+            <option value="Simpsons">Simpsons</option> </select
+          ><br />
+          Comments <br />
+          <textarea
+            name="comments"
+            cols="50"
+            rows="6"
+            placeholder="Enter comments"
+          ></textarea
+          ><br />
+          <input
+            type="submit"
+            name="submit"
+            value="enter me"
+            onClick="return validateForm();"
+          />
+        </form>
+      </body>
+    </html>
+    <!-- partial -->
+    <script src="./script.js"></script>
+  </body>
+</html>
